@@ -59,7 +59,7 @@ services:
       - key: PYTHON_VERSION
         value: 3.11.9
       - key: SUPPORTBOT_API_URL
-        value: https://supportbot-api.onrender.com          # change if Render gives a different URL
+        value: https://supportbot-api-l4gm.onrender.com          # change if Render gives a different URL
       - key: SUPPORTBOT_API_KEY
         fromService:
           type: web
