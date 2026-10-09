@@ -1,0 +1,22 @@
+# INVOICE — billing, amounts, currency, originals
+# Format: Q: / K: / A:  — entries separated by a blank line.
+
+Q: The invoice amount seems wrong
+K: invoice wrong, amount wrong, incorrect, mistake, error, overcharged, discrepancy, total, price wrong, ghalat
+A: Please share the specific line item in question. Our records show [quantity] x [unit_price] = [total]. If there is a discrepancy we will issue a corrected invoice within 24 hours.
+
+Q: I need the invoice in a different currency
+K: currency, pkr, aed, sar, eur, euro, dirham, riyal, convert, exchange rate
+A: Our invoices are issued in USD (FOB Karachi). We can provide an equivalent in your currency at the day's exchange rate. Please confirm and we will resend accordingly.
+
+Q: I need the original invoice for customs
+K: original invoice, customs, hard copy, courier, dhl, commercial invoice, clearance
+A: The original commercial invoice can be couriered to your address. Please share your full postal address and we will arrange DHL/courier within 2 business days.
+
+Q: Please resend the invoice / proforma
+K: resend, send again, send invoice, invoice copy, copy of invoice, proforma, pi, lost invoice, didn't receive invoice
+A: Of course. We will resend invoice [invoice_no] to you on WhatsApp and email within the hour.
+
+Q: What are the bank details for payment?
+K: bank details, account, iban, swift, payment details, where to pay, remittance
+A: Our bank details are printed at the bottom of your proforma invoice [invoice_no]. For security, please confirm them with us by phone before any transfer.

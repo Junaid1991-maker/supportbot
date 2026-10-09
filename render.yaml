@@ -1,0 +1,69 @@
+# Render Blueprint - 2 free web services (same pattern as RetentionBot)
+# Render → New → Blueprint → pick this repo. Then fill the "sync: false" values in each
+# service's Environment tab and add credentials.json as a Secret File on supportbot-api.
+services:
+  - type: web
+    name: supportbot-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: openai/gpt-oss-120b
+      - key: WA_ACCESS_TOKEN
+        sync: false
+      - key: WA_PHONE_NUMBER_ID
+        value: "1231512983369543"
+      - key: WA_API_VERSION
+        value: v23.0
+      - key: GOOGLE_SHEETS_ID
+        sync: false
+      - key: GOOGLE_CREDENTIALS_PATH
+        value: /etc/secrets/credentials.json      # Secret File named credentials.json
+      - key: ORDER_AGENT_SHEET_ID
+        sync: false                               # Order Agent sheet ID, or leave empty
+      - key: RETENTION_SHEET_ID
+        value: 18k55ymnr-ztkvlPNvOOtypPotGpgqLIIxSkPz40dEJg
+      - key: ALERT_WA_NUMBER
+        value: "+923183355708"
+      - key: DEMO_MODE
+        value: "true"
+      - key: DEMO_WA_NUMBER
+        value: "+923183355708"
+      - key: CONFIDENCE_THRESHOLD
+        value: "0.80"
+      - key: CERTIFICATE_THRESHOLD
+        value: "0.85"
+      - key: COMPLAINT_ALWAYS_ESCALATE
+        value: "true"
+      - key: CHANGE_ALWAYS_ESCALATE
+        value: "true"
+      - key: DASHBOARD_URL
+        value: https://supportbot-dashboard.onrender.com   # change if Render gives a different URL
+      - key: SUPPORTBOT_API_KEY
+        generateValue: true                       # n8n sends it as header X-API-Key
+
+  - type: web
+    name: supportbot-dashboard
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run streamlit_app/app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SUPPORTBOT_API_URL
+        value: https://supportbot-api.onrender.com          # change if Render gives a different URL
+      - key: SUPPORTBOT_API_KEY
+        fromService:
+          type: web
+          name: supportbot-api
+          envVarKey: SUPPORTBOT_API_KEY
+      - key: DASHBOARD_PASSWORD
+        sync: false

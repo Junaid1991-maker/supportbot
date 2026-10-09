@@ -1,0 +1,19 @@
+# Wakes the free Render API before a demo (first request after sleep takes ~50 s).
+# Manual by default: GitHub → Actions → "SupportBot keep awake" → Run workflow.
+#
+# Render free tier = 750 instance-hours per MONTH for the WHOLE workspace. RetentionBot's
+# keep-awake already uses a big share. Only enable the schedule below if the budget allows:
+# 10 h x 26 days = ~260 h per always-on service.
+name: SupportBot keep awake
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "*/10 4-13 * * 1-6"   # every 10 min, 9 AM–7 PM PKT, Mon–Sat
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping /health (waits up to 90 s for a cold start)
+        run: curl -fsS --max-time 90 "${{ secrets.SUPPORTBOT_API_URL || 'https://supportbot-api.onrender.com' }}/health"

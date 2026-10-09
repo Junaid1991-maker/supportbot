@@ -1,0 +1,18 @@
+# QUALITY — complaints. ALWAYS ESCALATE, but send the acknowledgment first.
+# Format: Q: / K: / A:  — entries separated by a blank line.
+
+Q: There is a product quality issue
+K: quality, defect, defects, damaged, damage, torn, hole, stain, faulty, bad quality, not good, kharab, problem with goods
+A: We are sorry to hear about the quality concern. This has been flagged to our team as urgent and someone will contact you within 2 hours with a resolution. Could you please share photos of the issue so we can resolve it faster?
+
+Q: The colour / shade is different from the sample
+K: colour, color, shade, shade variation, different color, fading, faded, bleeding, rang
+A: We are sorry the shade is not as expected. This has been flagged to our team as urgent. Please share photos in daylight next to the approved sample, and the carton number, so we can check it against our lab records.
+
+Q: The size / GSM / weight is wrong
+K: size, measurement, gsm, weight, too small, too thin, shrink, shrinkage, dimensions
+A: Thank you for flagging this. It has been escalated to our quality team as urgent. Please share a photo of the measurement and the carton number so we can compare it with the inspection report.
+
+Q: The quantity received is short
+K: short, missing, less quantity, shortage, cartons missing, count wrong, kam
+A: We are sorry about the shortage. This has been escalated as urgent. Please share the carton count you received and the packing list number so we can reconcile it immediately.

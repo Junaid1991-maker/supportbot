@@ -1,0 +1,23 @@
+# SHIPMENT — delivery, tracking, delays
+# Format: Q: / K: (extra keywords for search) / A:  — entries separated by a blank line.
+# Placeholders in [brackets] are filled from the buyer's order record by Node 5.
+
+Q: Where is my shipment?
+K: where, shipment, tracking, track, status, kahan, container, consignment, delivery
+A: Your order was shipped on [ship_date] via [carrier]. ETD Karachi [ship_date], ETA [destination] [eta_date]. You can track it on the [carrier] website using BL number [bl_no].
+
+Q: Why is my delivery delayed?
+K: delay, delayed, late, not arrived, still waiting, der, abhi tak nahi, when will it arrive
+A: Delays can occur due to port congestion, customs clearance or carrier schedule changes. We are monitoring your shipment and will update you as soon as the carrier confirms the new ETA.
+
+Q: Has my order been shipped yet?
+K: shipped, dispatch, dispatched, sent, ready, production, bhej diya, ship hua
+A: Your order is currently [order_status]. Expected shipment date: [ship_date]. We will send tracking details as soon as the Bill of Lading is issued.
+
+Q: Can you send me the BL / tracking number?
+K: bl, bl number, bl copy, bill of lading, tracking number, awb, container number, booking
+A: Your BL number is [bl_no] with [carrier]. If you need a scanned copy of the BL, we can email it to you today.
+
+Q: Which port will my shipment arrive at?
+K: port, destination, arrival port, jebel ali, dammam, hamburg, felixstowe
+A: Your shipment is booked FOB Karachi to [destination]. Please confirm if your clearing agent needs any documents in advance.

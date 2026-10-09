@@ -1,0 +1,22 @@
+# CERTIFICATES — compliance documents
+# Format: Q: / K: / A:  — entries separated by a blank line.
+
+Q: I need the OEKO-TEX certificate
+K: oeko-tex, oekotex, oeko tex, standard 100, certificate, test report
+A: The OEKO-TEX certificate for [product] is available. We will share the certificate PDF within 24 hours.
+
+Q: I need the certificate of origin
+K: certificate of origin, coo, origin, form a, gsp, chamber
+A: The Certificate of Origin is included in your shipping documents package. If you have not received it, please confirm your email and we will resend immediately.
+
+Q: I need the DPP document for EU customs
+K: dpp, digital product passport, eu, passport, espr, eu customs, sustainability data
+A: We can generate your EU Digital Product Passport document within 5 minutes. Please confirm the product details and we will send the complete DPP file.
+
+Q: Do you have GOTS / organic certification?
+K: gots, gots certificate, organic, organic cotton, bci, better cotton, recycled, grs
+A: Please confirm which certification you need for [product]. We will check the current certificate scope and share a copy within 24 hours.
+
+Q: I need a test report / lab report
+K: test report, lab report, sgs, intertek, bureau veritas, lab test, gsm test, shrinkage test
+A: We will share the latest lab test report for [product] within 24 hours. If you need a third-party test (SGS / Intertek), we can arrange it — timelines depend on the lab.

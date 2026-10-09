@@ -1,0 +1,26 @@
+# GENERAL — terms, MOQ, markets, changes
+# Format: Q: / K: / A:  — entries separated by a blank line.
+
+Q: What are your payment terms?
+K: payment terms, terms, advance, lc, letter of credit, credit, tt, payment
+A: Our standard terms are 50% advance and 50% before shipment. For established clients we can discuss LC at sight arrangements.
+
+Q: What is your MOQ?
+K: moq, minimum order, minimum quantity, minimum, sample, samples
+A: Minimum order quantity is 500 pieces per item per colour. Samples of 10-20 pieces are available at sample pricing.
+
+Q: Do you export to my country?
+K: export, countries, country, market, uae, saudi, qatar, kuwait, germany, uk, usa, ship to
+A: Yes, we export to UAE, Saudi Arabia, Qatar, Kuwait, Germany, UK, USA and other markets, with FOB Karachi pricing. Which market are you targeting?
+
+Q: I want to change my order (quantity / colour / size)
+K: change order, modify, increase, decrease, change quantity, change colour, amend, update order, badalna
+A: Thank you, we have noted your change request. Changes depend on production status, so our team will confirm feasibility and any price impact within 4 working hours.
+
+Q: Can I cancel my order?
+K: cancel, cancellation, cancel order, stop order
+A: We have received your cancellation request. Our team will review it against the production status and contact you within 4 working hours.
+
+Q: What is your lead time?
+K: lead time, production time, how long, delivery time, kitne din, timeline
+A: Standard production lead time is 30-45 days after advance payment and approved sample, plus transit time to your port.

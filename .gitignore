@@ -1,0 +1,8 @@
+.env
+credentials.json
+credentials.json.json
+*.json.json
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/secrets.toml
