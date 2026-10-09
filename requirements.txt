@@ -4,6 +4,10 @@ uvicorn
 groq==0.37.1
 httpx==0.27.2
 streamlit==1.32.0
+# Streamlit 1.32 needs NumPy 1.x; newest pyarrow needs NumPy 2 -> pin a matching set
+numpy==1.26.4
+pyarrow==16.1.0
+pandas==2.2.3
 google-auth
 google-auth-oauthlib
 gspread
